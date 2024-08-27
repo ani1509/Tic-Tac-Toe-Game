@@ -2,9 +2,6 @@ import React, { useState } from 'react'
 
 export default function Player({initialName, symbol, isActive, onChangeName}) {
 
-  // we ll not LIFT playerName bcz it actually used to update the input field ON EVERY KEY STROKE 
-  // and iff we move it out to app then whole app comp will update in every key stroke .. t.f. WHOLE GAME BOARD will reevalute
-  // and also we used player comp twice in the ap comp
     const [playerName, setPlayerName] = useState(initialName)
     const [isEditing, setIsEditing] = useState(false)
     
@@ -13,7 +10,7 @@ export default function Player({initialName, symbol, isActive, onChangeName}) {
     {
         setIsEditing(prev=>!prev)
 
-        if(isEditing){   // as we want onchange fn to be triggered when we start editiing
+        if(isEditing){   
           onChangeName(symbol,playerName)
         }
     }
