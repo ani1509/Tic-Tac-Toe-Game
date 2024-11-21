@@ -18,10 +18,9 @@ html {
 body {
   background: radial-gradient(
       rgba(255, 215, 0),
-      /* rgba(235, 145, 86, 0.87) */
+      
       rgb(28, 28, 77,0.87)
-      /* rgb(54, 112, 54) */
-      /* rgb(75, 30, 30) */
+     
     ),
   url('/public/game-logo.png');
   background-repeat: repeat;
