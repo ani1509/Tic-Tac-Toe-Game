@@ -23,7 +23,7 @@ body {
       /* rgb(54, 112, 54) */
       /* rgb(75, 30, 30) */
     ),
-  url('/game-logo.png');
+  url('@/assets/game-logo.png');
   background-repeat: repeat;
   background-size: 100% 100%, 30% 30%, 100% 100%;
  
